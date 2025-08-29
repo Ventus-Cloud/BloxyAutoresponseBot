@@ -1,0 +1,72 @@
+{
+  "triggers": {
+    "hello": {
+      "responses": [
+        "Hello there! 👋",
+        "Hi! How are you doing?",
+        "Hey! Nice to see you!"
+      ],
+      "match_type": "contains",
+      "enabled": true
+    },
+    "good morning": {
+      "responses": [
+        "Good morning! ☀️",
+        "Morning! Hope you have a great day!",
+        "Good morning! Ready for a new day?"
+      ],
+      "match_type": "contains",
+      "enabled": true
+    },
+    "good night": {
+      "responses": [
+        "Good night! Sweet dreams! 🌙",
+        "Sleep well!",
+        "Good night! See you tomorrow!"
+      ],
+      "match_type": "contains",
+      "enabled": true
+    },
+    "thanks": {
+      "responses": [
+        "You're welcome! 😊",
+        "Happy to help!",
+        "No problem at all!"
+      ],
+      "match_type": "contains",
+      "enabled": true
+    },
+    "how are you": {
+      "responses": [
+        "I'm doing great, thanks for asking! 🤖",
+        "All systems operational!",
+        "I'm good! How about you?"
+      ],
+      "match_type": "contains",
+      "enabled": true
+    },
+    "bye": {
+      "responses": [
+        "Goodbye! See you later! 👋",
+        "Bye! Have a great day!",
+        "See you around!"
+      ],
+      "match_type": "word",
+      "enabled": true
+    },
+    "help": {
+      "responses": [
+        "Need help? Just ask! I'm here to assist.",
+        "What can I help you with?",
+        "I'm ready to help! What do you need?"
+      ],
+      "match_type": "word",
+      "enabled": true
+    }
+  },
+  "settings": {
+    "case_sensitive": false,
+    "cooldown_seconds": 3,
+    "max_response_length": 2000
+  }
+}
