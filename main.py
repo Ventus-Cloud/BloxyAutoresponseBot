@@ -102,10 +102,27 @@ async def main():
         await bot.start(token)
     except discord.LoginFailure:
         logger.error('Invalid Discord token provided!')
+        logger.error('Please check your DISCORD_TOKEN environment variable.')
     except discord.HTTPException as e:
-        logger.error(f'HTTP error occurred: {e}')
+        if 'privileged intents' in str(e):
+            logger.error('Privileged intents error! Please enable Message Content Intent in Discord Developer Portal:')
+            logger.error('1. Go to https://discord.com/developers/applications/')
+            logger.error('2. Select your bot application')
+            logger.error('3. Go to Bot section')
+            logger.error('4. Enable "Message Content Intent" under Privileged Gateway Intents')
+        else:
+            logger.error(f'HTTP error occurred: {e}')
     except Exception as e:
-        logger.error(f'Unexpected error: {e}')
+        error_msg = str(e)
+        if 'privileged intents' in error_msg:
+            logger.error('Privileged intents not enabled! To fix this:')
+            logger.error('1. Go to https://discord.com/developers/applications/')
+            logger.error('2. Select your bot application')
+            logger.error('3. Go to Bot section')
+            logger.error('4. Enable "Message Content Intent" under Privileged Gateway Intents')
+            logger.error('5. Save changes and restart the bot')
+        else:
+            logger.error(f'Unexpected error: {e}')
     finally:
         if not bot.is_closed():
             await bot.close()
