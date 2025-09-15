@@ -33,51 +33,14 @@ class ResponseHandler:
         """Create a default configuration file"""
         default_config = {
             "triggers": {
-                "hello": {
+                "ventus": {
                     "responses": [
-                        "Hello there! 👋",
-                        "Hi! How are you doing?",
-                        "Hey! Nice to see you!"
+                        "Mejor hazle ping <@866749277966565426>"
                     ],
                     "match_type": "contains",
                     "enabled": True
                 },
-                "good morning": {
-                    "responses": [
-                        "Good morning! ☀️",
-                        "Morning! Hope you have a great day!",
-                        "Good morning! Ready for a new day?"
-                    ],
-                    "match_type": "contains",
-                    "enabled": True
-                },
-                "good night": {
-                    "responses": [
-                        "Good night! Sweet dreams! 🌙",
-                        "Sleep well!",
-                        "Good night! See you tomorrow!"
-                    ],
-                    "match_type": "contains",
-                    "enabled": True
-                },
-                "thanks": {
-                    "responses": [
-                        "You're welcome! 😊",
-                        "Happy to help!",
-                        "No problem at all!"
-                    ],
-                    "match_type": "contains",
-                    "enabled": True
-                },
-                "how are you": {
-                    "responses": [
-                        "I'm doing great, thanks for asking! 🤖",
-                        "All systems operational!",
-                        "I'm good! How about you?"
-                    ],
-                    "match_type": "contains",
-                    "enabled": True
-                }
+             
             },
             "settings": {
                 "case_sensitive": False,
