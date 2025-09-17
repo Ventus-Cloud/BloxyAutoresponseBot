@@ -6,6 +6,20 @@
       ],
       "match_type": "contains",
       "enabled": true
+    },
+    "lau": {
+      "responses": [
+        "Mejor hazle ping <@643114684177711123>"
+      ],
+      "match_type": "contains",
+      "enabled": true
+    },
+    "clara": {
+      "responses": [
+        "Mejor hazle ping <@1333869783359160341>"
+      ],
+      "match_type": "contains",
+      "enabled": true
     }
   },
   "settings": {
