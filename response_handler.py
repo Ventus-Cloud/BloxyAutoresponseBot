@@ -33,9 +33,9 @@ class ResponseHandler:
         """Create a default configuration file"""
         default_config = {
             "triggers": {
-                "ventus": {
+                "Sab": {
                     "responses": [
-                        "Mejor hazle ping <@866749277966565426>"
+                        "Está prohibido hablar de sab en este servidor"
                     ],
                     "match_type": "contains",
                     "enabled": True
@@ -45,14 +45,14 @@ class ResponseHandler:
                         "Mejor hazle ping <@643114684177711123>"
                     ],
                     "match_type": "contains",
-                    "enabled": True
+                    "enabled": False
                 },
                 "clara": {
                     "responses": [
                         "Mejor hazle ping <@1333869783359160341>"
                     ],
                     "match_type": "contains",
-                    "enabled": True
+                    "enabled": False
                 },
              
              
