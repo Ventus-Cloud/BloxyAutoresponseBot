@@ -74,8 +74,8 @@ class AutoResponseBot(commands.Bot):
 
             # Caso 1: en los canales generales normales
             if message.channel.id in GENERAL_CHANNELS:
-                if "crosstrade" in content or "brainrot" in content:
-                    await message.channel.send("🚫 No está permitido el crosstrade <@&1375924625975939163>.")
+                if "crosstrade" in content or "brainrot" in content or "sab" in content or "roba un" in content:
+                    await message.channel.send("🚫 No está permitido el crosstrade ni el comercio de cuentas.")
                 elif "fruta" in content or "bloxfruits" in content or "pvp" in content:
                     await message.channel.send(f"👋 Ese tema va en el canal: <#{BLOX_GENERAL}>")
                 elif "raid" in content or "trial" in content or "v4" in content:
@@ -88,7 +88,7 @@ class AutoResponseBot(commands.Bot):
             # Caso 2: canal general de blox
             elif message.channel.id == BLOX_GENERAL:
                 if "cuentas" in content or "crosstrade" in content or "cuenta" in content:
-                    await message.channel.send("🚫 No está permitido el intercambio o venta de cuentas <@&1375924625975939163>.")
+                    await message.channel.send("🚫 No está permitido el crosstrade ni el comercio de cuentas.")
                 elif "raid" in content or "trial" in content or "v4" in content:
                     await message.channel.send(f"⚔️ Para organizar raids o trials usa <#{RAIDS_CHANNEL}>.")
                 elif "trade" in content or "que me das" in content or "que das" in content:
@@ -99,7 +99,7 @@ class AutoResponseBot(commands.Bot):
             # Caso 3: en los canales específicos de blox
             elif message.channel.id == TRADE_CHANNEL:
                 if "cuentas" in content or "crosstrade" in content or "cuenta" in content:
-                    await message.channel.send("🚫 No está permitido el intercambio o venta de cuentas  <@&1375924625975939163>.")
+                    await message.channel.send("🚫 No está permitido el crosstrade ni el comercio de cuentas.")
                 elif "raid" in content or "trial" in content or "v4" in content:
                     await message.channel.send(f"⚔️ Para organizar raids o trials usa <#{RAIDS_CHANNEL}>.")
                 elif "marino" in content:
@@ -107,7 +107,7 @@ class AutoResponseBot(commands.Bot):
              
             elif message.channel.id == RAIDS_CHANNEL:
                 if "cuentas" in content or "crosstrade" in content or "cuenta" in content:
-                    await message.channel.send("🚫 No está permitido el intercambio o venta de cuentas <@&1375924625975939163>.")
+                    await message.channel.send("🚫 No está permitido el crosstrade ni el comercio de cuentas.")
                 elif "trade" in content:
                     await message.channel.send(f"💱 Para intercambios de objetos usa <#{TRADE_CHANNEL}>.")
                 elif "marino" in content:
@@ -115,7 +115,7 @@ class AutoResponseBot(commands.Bot):
 
             elif message.channel.id == SEA_EVENTS_CHANNEL:
                 if "cuentas" in content or "crosstrade" in content or "cuenta" in content:
-                    await message.channel.send("🚫 No está permitido el intercambio o venta de cuentas <@&1375924625975939163>.")
+                    await message.channel.send("🚫 No está permitido el crosstrade ni el comercio de cuentas.")
                 elif "trade" in content:
                     await message.channel.send(f"💱 Para intercambios de objetos usa <#{TRADE_CHANNEL}>.")
                 elif "raid" in content:
