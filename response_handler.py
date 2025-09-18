@@ -38,7 +38,7 @@ class ResponseHandler:
                         "Está prohibido hablar de sab en este servidor"
                     ],
                     "match_type": "contains",
-                    "enabled": True
+                    "enabled": False
                 },
                 "lau": {
                     "responses": [
