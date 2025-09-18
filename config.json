@@ -5,7 +5,7 @@
         "Está prohibido hablar de sab en este servidor"
       ],
       "match_type": "contains",
-      "enabled": true
+      "enabled": false
     },
     "lau": {
       "responses": [
