@@ -80,7 +80,7 @@ class AutoResponseBot(commands.Bot):
                     await message.channel.send(f"👋 Ese tema va en el canal: <#{BLOX_GENERAL}>")
                 elif "raid" in content or "trial" in content or "v4" in content:
                     await message.channel.send(f"⚔️ Para organizar raids o trials usa <#{RAIDS_CHANNEL}>.")
-                elif "trade" in content or "que me das" in content or "que das" in content:
+                elif "trade" in content or "que me das" in content or "que das" in content or "que dan" in content or "que me dan" in content:
                     await message.channel.send(f"💱 Para intercambios usa <#{TRADE_CHANNEL}>.")
                 elif "marino" in content or "barco" in content or "levi" in content or "sb" in content or "bestias marinas" in content or "terror" in content or "terrorshark" in content or "sea beast" in content or "bestia marina" in content or "prehistorica" in content or "mirage" in content or "isla espejo" in content or "isla kit" in content or "kit island" in content or "kitsune island" in content or "kitsune shrine" in content or "kit shrine" in content or "prehistórica" in content:
                     await message.channel.send(f"🌊 Para eventos marinos usa <#{SEA_EVENTS_CHANNEL}>.")
